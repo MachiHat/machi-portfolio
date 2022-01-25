@@ -1,0 +1,74 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+// COLORS
+$Orange: #ff914d;
+$Grey: #a6a6a6;
+
+// MIXINS
+
+@mixin centerflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// GLOBAL
+
+* {
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+// COMMON USE CLASSES
+
+.centerflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greyText {color: $Grey;}
+
+// PRESET DISPLAYS
+
+.preset-container {
+    @include centerflex;
+    flex-direction: column;
+    width: 50vw;
+    height: 80vh;
+    margin: auto;
+    .a-title {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-left: 3rem;
+        text-shadow: 1px 1px 8px #fff;
+        margin: 0;
+    }
+    .a-desc {font-size: 1.2rem;}
+    .small-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50vw;
+        .container-card {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 2rem;
+            box-shadow: 0 0 12px $Grey;
+            border-radius: 1rem;
+        }
+    }
+}
+
+// ANIMATIONS

@@ -1,0 +1,78 @@
+// TOP NAVIGATION BAR AND LOGO
+.navbar {
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    img {
+        width: 5rem;
+        border-radius: 2.5rem;
+    }
+
+    .navlist {
+        list-style: none;
+
+        .navlist-item {
+            margin: 0 2rem;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-shadow: 1px 1px 1px $Grey;
+            transition: all .3s ease-in-out;
+            background: none;
+            border: none;
+
+            &:hover,
+            &.active {
+                position: relative;
+                transform: scale(1.3);
+                font-weight: 700;
+                text-shadow: 3px 3px 8px #fff;
+            }
+        }
+
+    }
+}
+
+// ACTIVE NAVBAR CLASS
+
+// NAVIGATION ARROWS - AKA SWITCHER
+.arrow-container {
+    position: fixed;
+    width: 100vw;
+    max-width: 1440px;
+    height: 6rem;
+    margin: 35vh auto;
+    display: flex;
+    align-items: center;
+
+    .switch-arrows {
+        position: absolute;
+        font-size: 70px;
+        color: $Orange;
+        font-weight: 800;
+        text-shadow: 1px 1px 3px #fff;
+        border: none;
+        background-color: transparent;
+        height: 4rem;
+        width: 4rem;
+
+        &.disabled {
+            color: $Grey;
+        }
+    }
+
+    .arrow-left {
+        left: 5%;
+    }
+
+    .arrow-right {
+        float: right;
+        right: 5%;
+    }
+}
