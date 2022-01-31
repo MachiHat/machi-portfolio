@@ -14,24 +14,26 @@ import { Nav } from "./nav/Nav";
 // ANIMATIONS
 import { AnimatePresence } from "framer-motion";
 // ANIMATION CONTEXT
-import { AnimationContext } from "./animations/AnimationContext";
+import AnimationContextProvider from "./animations/AnimationContext";
 
 function App() {
   return (
-    <AnimationContext>
-      <BrowserRouter component="div">
-        <Nav />
-        {/* <AnimatePresence exitBeforeEnter > */}
-          <Routes>
-            <Route exacth path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/proyects" element={<Proyects />} />
-            <Route path="contact" element={<Contact />} />
-          </Routes>
-        {/* </AnimatePresence> */}
-      </BrowserRouter>
-    </AnimationContext>
+    <div className="app">
+      <AnimationContextProvider>
+        <BrowserRouter>
+          <Nav />
+          <AnimatePresence exitBeforeEnter initial={false} >
+            <Routes>
+              <Route exacth path="/home" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/proyects" element={<Proyects />} />
+              <Route path="contact" element={<Contact />} />
+            </Routes>
+          </AnimatePresence>
+        </BrowserRouter>
+      </AnimationContextProvider>
+    </div>
   );
 }
 

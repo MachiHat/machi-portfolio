@@ -1,8 +1,26 @@
-import React, { createContext } from 'react';
+import React, { createContext, useContext } from 'react';
 
-export const AnimationContext = () => {
-    const animContext = createContext();
+const AnimationContext = createContext();
 
-    
-  return <div></div>;
+export const useAnimContext = () => useContext(AnimationContext);
+
+export const AnimationContextProvider = ({ children }) => {
+
+    const leaveLeft = {x: -100};
+    const leaveRight = {x: 100};
+
+    const enterLeft = {x: 100}
+    const enterRight = {x: -100};
+
+    const slideToNext = () => { };
+
+    const slideToPrev = () => { };
+
+    return (
+        <AnimationContext.Provider value={{ slideToNext, slideToPrev }}>
+            {children}
+        </AnimationContext.Provider>
+    );
 };
+
+export default AnimationContextProvider;

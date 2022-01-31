@@ -29,6 +29,10 @@ html {
     color: #fff;
 }
 
+body {
+    overflow: hidden;
+}
+
 // COMMON USE CLASSES
 
 .centerflex {
@@ -45,7 +49,7 @@ html {
     @include centerflex;
     flex-direction: column;
     width: 50vw;
-    height: 80vh;
+    min-height: 80vh;
     margin: auto;
     .a-title {
         font-size: 3rem;
@@ -55,20 +59,5 @@ html {
         margin: 0;
     }
     .a-desc {font-size: 1.2rem;}
-    .small-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 50vw;
-        .container-card {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            margin: 2rem;
-            box-shadow: 0 0 12px $Grey;
-            border-radius: 1rem;
-        }
-    }
 }
 
-// ANIMATIONS

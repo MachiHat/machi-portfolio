@@ -1,0 +1,34 @@
+.small-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50vw;
+  .container-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    box-shadow: 0 0 12px $Grey;
+    border-radius: 1rem;
+  }
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto;
+  max-width: 40vw;
+  li {
+    h3 {text-align: center}
+    p {
+      a {
+        text-decoration: none;
+        color: $Orange;
+        &:hover {
+          text-shadow: 0px 0px 2px #fff;
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+  }
+}

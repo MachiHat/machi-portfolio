@@ -10,6 +10,10 @@
         border-radius: 50%;
         -webkit-animation: spinning 15s ease paused;
         animation: spinning 15s ease paused;
+        @media screen and (max-width: 580px) {
+            height: 20rem;
+            width: 20rem;
+        }
 
         &:before {
             content: "";
@@ -56,10 +60,16 @@
 
         .part1 {
             font-size: 3rem;
+            @media screen and (max-width: 580px) {
+                font-size: 2.3rem
+            }
         }
 
         .part2 {
             font-size: 2.5rem;
+            @media screen and (max-width: 580px) {
+                font-size: 1.8rem
+            }
         }
     }
 }

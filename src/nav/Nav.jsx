@@ -14,10 +14,13 @@ export const Nav = () => {
     { id: 5, label: "CONTACT", route: "/contact" },
   ];
 
-  // NAVIGATION LOCATIONS AND PAGES
+  // NAVIGATION ROUTES AND PAGES
+
   const [CurrentPage, setCurrentPage] = useState(0);
 
   const route = linkArray[CurrentPage]?.route;
+
+  // NAVIGATION FUNCTIONS
 
   const next = () => {
     if (CurrentPage >= linkArray.length - 1) return;
@@ -38,6 +41,8 @@ export const Nav = () => {
     navigate(route);
   }, [CurrentPage, navigate, route]);
 
+  // SWITCHER CONDITIONALS
+  
   const hasNext = linkArray[CurrentPage + 1]?.route;
   const hasPrev = linkArray[CurrentPage - 1]?.route;
 
