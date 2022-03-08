@@ -60,13 +60,7 @@ export const Skills = () => {
           <h3>Git and Github version managment.</h3> From CoderHouse course,
           internet courses, and videos.
         </li>
-
-        <li>
-          <h3>C++ and Basic Computer Logic</h3>{" "}
-          {"(such as the binary system and computer logical gates)"}. From 1st
-          year in Computer Engineering.
-        </li>
-
+        
       </ul>
     </div>
   );

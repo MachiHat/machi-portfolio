@@ -14,7 +14,7 @@ export const About = () => {
         objective is to expand my knowledge around programming in general,
         currently I'm in a full back-end NodeJS course, and looking foward to
         keep learning with other people. <br /><br /> &nbsp;&nbsp;I hope this little page that I made
-        with lots of love while learning helps you understand who I am, and who I
+        with love while learning helps you understand who I am, and who I
         want to become in the future. <br /> <b style={{float: "right"}}>Thanks for reading.</b>
       </p>
     </div>

@@ -1,12 +1,13 @@
 // TOP NAVIGATION BAR AND LOGO
 .navbar {
     width: 100vw;
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     @media screen and (max-width: 580px) {
         justify-content: center;
         position: -webkit-sticky;
