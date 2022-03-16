@@ -9,7 +9,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Skills } from "./pages/Skills";
-import { Proyects } from "./pages/Proyects";
+import { Projects } from "./pages/Projects";
 import { Nav } from "./nav/Nav";
 // ANIMATIONS
 import { AnimatePresence } from "framer-motion";
@@ -27,7 +27,7 @@ function App() {
               <Route exacth path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/skills" element={<Skills />} />
-              <Route path="/proyects" element={<Proyects />} />
+              <Route path="/projects" element={<Projects />} />
               <Route path="contact" element={<Contact />} />
             </Routes>
           </AnimatePresence>

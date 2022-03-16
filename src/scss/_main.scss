@@ -1,11 +1,11 @@
-// FONTS
+// ----- FONTS
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
-// COLORS
+// ----- COLORS
 $Orange: #ff914d;
 $Grey: #a6a6a6;
 
-// MIXINS
+// ----- MIXINS
 
 @mixin centerflex {
     display: flex;
@@ -13,7 +13,7 @@ $Grey: #a6a6a6;
     justify-content: center;
 }
 
-// GLOBAL
+// ----- GLOBAL
 
 * {
     box-sizing: border-box;
@@ -29,8 +29,17 @@ html {
     color: #fff;
 }
 
+hr {
+    width: 100%;
+}
+
+// HIDE SCROLLBAR
+body::-webkit-scrollbar {
+    display: none;
+}
 body {
-    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 // COMMON USE CLASSES
@@ -42,8 +51,6 @@ body {
 }
 
 .greyText {color: $Grey;}
-
-// PRESET DISPLAYS
 
 .preset-container {
     @include centerflex;

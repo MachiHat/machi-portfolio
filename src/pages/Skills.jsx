@@ -6,7 +6,7 @@ export const Skills = () => {
       <h1 className="a-title">My Skills</h1>
       <h2>What I learned so far:</h2>
       <ul className="skills-list">
-        
+        <hr />
         <li>
           <h3>HTML5 {"&"} CSS3.</h3>
           <p>
@@ -21,7 +21,7 @@ export const Skills = () => {
             .
           </p>
         </li>
-
+        <hr />
         <li>
           <h3>Javascript.</h3>
           <p>
@@ -33,10 +33,10 @@ export const Skills = () => {
             >
               {" (Certificate) "}
             </a>
-            , internet courses and "You don't know JS - Vol 1".
+            , internet courses and book: "You don't know JS - Vol 1".
           </p>
         </li>
-
+        <hr />
         <li>
           <h3>ReactJS.</h3>
           <p>
@@ -55,12 +55,12 @@ export const Skills = () => {
             .
           </p>
         </li>
-        
+        <hr />
         <li>
-          <h3>Git and Github version managment.</h3> From CoderHouse course,
+          <h3>Git version control system.</h3> From CoderHouse course,
           internet courses, and videos.
         </li>
-        
+        <hr />
       </ul>
     </div>
   );
