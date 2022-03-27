@@ -6,18 +6,18 @@ export const useAnimContext = () => useContext(AnimationContext);
 
 export const AnimationContextProvider = ({ children }) => {
 
-    const leaveLeft = {x: -100};
-    const leaveRight = {x: 100};
+    // const leaveLeft = {x: -100};
+    // const leaveRight = {x: 100};
 
-    const enterLeft = {x: 100}
-    const enterRight = {x: -100};
+    // const enterLeft = {x: 100}
+    // const enterRight = {x: -100};
 
-    const slideToNext = () => { };
+    // const slideToNext = () => { };
 
-    const slideToPrev = () => { };
+    // const slideToPrev = () => { };
 
     return (
-        <AnimationContext.Provider value={{ slideToNext, slideToPrev }}>
+        <AnimationContext.Provider>
             {children}
         </AnimationContext.Provider>
     );
