@@ -5,20 +5,29 @@ export const Footer = () => {
   return (
     <footer>
       <div className="foot-list">
-        <a className="common-link" href="https://github.com/MachiHat/">
-            <FaGithub />
+        <a
+          className="common-link"
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/MachiHat/"
+        >
+          <FaGithub />
         </a>
         <a
-            className="common-link"
-            href="https://www.instagram.com/machi_herrera01/"
+          className="common-link"
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.instagram.com/machi_herrera01/"
         >
-            <FaInstagram />
+          <FaInstagram />
         </a>
         <a
-            className="common-link"
-            href="https://www.linkedin.com/in/machi-development/"
+          className="common-link"
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/machi-development/"
         >
-            <FaLinkedin />
+          <FaLinkedin />
         </a>
       </div>
       <span id="foot-tag">
