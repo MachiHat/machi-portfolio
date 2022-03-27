@@ -22,7 +22,6 @@ export const Home = () => {
           <h1 className="hello-title part2">front-end Web Dev.</h1>
         </motion.div>
       </div>
-      <span id="cr"><strong>©2022</strong> MACHIHAT - WIP</span>
     </AnimatePresence>
   );
 };

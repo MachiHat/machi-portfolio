@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: max-content;
     .proyect-card-title {
         display: flex;
         flex-direction: row;
@@ -13,14 +14,3 @@
     }
 }
 
-.common-link {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 800;
-    margin: 0 .5rem;
-    &:hover {
-        text-shadow: 1px 1px 1px $Grey;
-        transition: all .3s ease-in-out;
-        color: $Orange;
-    }
-}

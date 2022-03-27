@@ -31,6 +31,8 @@ html {
 
 hr {
     width: 100%;
+    background-color: $Orange;
+    border-color: $Orange;
 }
 
 // HIDE SCROLLBAR
@@ -51,6 +53,18 @@ body {
 }
 
 .greyText {color: $Grey;}
+
+.common-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    margin: 0 .5rem;
+    &:hover {
+        text-shadow: 1px 1px 1px $Grey;
+        transition: all .3s ease-in-out;
+        color: $Orange;
+    }
+}
 
 .preset-container {
     @include centerflex;

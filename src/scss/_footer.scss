@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .foot-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0 2rem;
+        a {font-size: 1.8rem;}
+    }
+    #foot-tag {
+        margin: 0 2rem;
+        font-size: .8rem;
+    }
+}

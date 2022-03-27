@@ -10,7 +10,7 @@ export const Nav = () => {
     { id: 1, label: "HOME", route: "/home" },
     { id: 2, label: "ABOUT", route: "/about" },
     { id: 3, label: "SKILLS", route: "/skills" },
-    { id: 4, label: "PROYECTS", route: "/proyects" },
+    { id: 4, label: "PROJECTS", route: "/projects" },
     { id: 5, label: "CONTACT", route: "/contact" },
   ];
 

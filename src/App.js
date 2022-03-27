@@ -10,11 +10,14 @@ import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Skills } from "./pages/Skills";
 import { Projects } from "./pages/Projects";
+// COMPONENTS
 import { Nav } from "./nav/Nav";
+import { Footer } from "./components/Footer";
 // ANIMATIONS
 import { AnimatePresence } from "framer-motion";
 // ANIMATION CONTEXT
 import AnimationContextProvider from "./animations/AnimationContext";
+
 
 function App() {
   return (
@@ -31,6 +34,7 @@ function App() {
               <Route path="contact" element={<Contact />} />
             </Routes>
           </AnimatePresence>
+          <Footer />
         </BrowserRouter>
       </AnimationContextProvider>
     </div>
